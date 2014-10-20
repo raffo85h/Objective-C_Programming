@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BNRStockHolding.h"
 
-@interface BNRForeignStockHolding : NSObject
+@interface BNRForeignStockHolding : BNRStockHolding
+@property (nonatomic) float conversionRate;
 
 @end

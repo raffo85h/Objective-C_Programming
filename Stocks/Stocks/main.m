@@ -7,13 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BNRStockHolding.h"
+#import "BNRForeignStockHolding.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         BNRStockHolding *share1 = [[BNRStockHolding alloc] init];
         BNRStockHolding *share2 = [[BNRStockHolding alloc] init];
         BNRStockHolding *share3 = [[BNRStockHolding alloc] init];
+        //The following is a share in the european market; i.e. a foreign stock holding
+        BNRForeignStockHolding *fca =[[BNRForeignStockHolding alloc] init];
         
         //define the empty array
         NSMutableArray *myShares = [NSMutableArray array];
@@ -36,6 +38,12 @@ int main(int argc, const char * argv[]) {
         share3.currentSharePrice = 49.51;
         share3.numberOfShares = 210;
         [myShares addObject:share3];
+        
+        //The foreigh share:
+        fca.purchaseSharePrice = 6.57;//in €
+        fca.currentSharePrice = 7.25;//in €
+        fca.numberOfShares = 550;
+        [myShares addObject: fca];
         
         //now we print the objects:
         for (BNRStockHolding *item in myShares)
