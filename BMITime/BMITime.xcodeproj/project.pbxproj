@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		670FBC6819F179EA00000A96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 670FBC6719F179EA00000A96 /* main.m */; };
 		670FBC7019F17AB000000A96 /* BNRPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 670FBC6F19F17AB000000A96 /* BNRPerson.m */; };
+		67AD321519F2C24F0073D6BD /* BNREmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AD321419F2C24F0073D6BD /* BNREmployee.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		670FBC6719F179EA00000A96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		670FBC6E19F17AB000000A96 /* BNRPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNRPerson.h; path = ../BNRPerson.h; sourceTree = "<group>"; };
 		670FBC6F19F17AB000000A96 /* BNRPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BNRPerson.m; path = ../BNRPerson.m; sourceTree = "<group>"; };
+		67AD321319F2C24F0073D6BD /* BNREmployee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNREmployee.h; sourceTree = "<group>"; };
+		67AD321419F2C24F0073D6BD /* BNREmployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNREmployee.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				670FBC6E19F17AB000000A96 /* BNRPerson.h */,
+				67AD321319F2C24F0073D6BD /* BNREmployee.h */,
+				67AD321419F2C24F0073D6BD /* BNREmployee.m */,
 				670FBC6F19F17AB000000A96 /* BNRPerson.m */,
 				670FBC6719F179EA00000A96 /* main.m */,
 			);
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67AD321519F2C24F0073D6BD /* BNREmployee.m in Sources */,
 				670FBC6819F179EA00000A96 /* main.m in Sources */,
 				670FBC7019F17AB000000A96 /* BNRPerson.m in Sources */,
 			);
@@ -238,6 +244,7 @@
 				670FBC6D19F179EA00000A96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
