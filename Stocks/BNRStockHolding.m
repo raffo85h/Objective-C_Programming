@@ -9,38 +9,7 @@
 #import "BNRStockHolding.h"
 
 @implementation BNRStockHolding
-/*
- //Thanks to the property declaration we can avoid the following:
--(float)purchaseSharePrice
-{
-    return _purchaseSharePrice;
-}
 
--(void)setPurchaseSharePrice:(float)p
-{
-    _purchaseSharePrice = p;
-}
-
--(float)currentSharePrice
-{
-    return _currentSharePrice;
-}
-
--(void)setCurrentSharePrice:(float)c
-{
-    _currentSharePrice = c;
-}
-
--(int)numberOfShares
-{
-    return _numberOfShares;
-}
-
--(void)setNumberOfShares:(int)n
-{
-    _numberOfShares = n;
-}
-*/
 -(float)costInDollars
 {
     float p = [self purchaseSharePrice];
@@ -55,9 +24,8 @@
     return c*n;
 }
 
--(void)addToArray:(NSMutableArray *)theArray
+- (NSString *) description
 {
-    [theArray addObject: self];
+    return [NSString stringWithFormat:@"\n Company Symbol: %@.\n Number of Shares: %d.\n Purchase share price in USD: %.2f.\n Cost in USD: %.2f.\n Current share pice in USD: %.2f.\n Current value in USD: %.2f.", self.symbol, self.numberOfShares, self.purchaseSharePrice, self.costInDollars, self.currentSharePrice, self.valueIndollars];
 }
-
 @end

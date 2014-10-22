@@ -7,14 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		670FBC7E19F1994400000A96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 670FBC7D19F1994400000A96 /* main.m */; };
-		670FBC8619F1997700000A96 /* BNRStockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = 670FBC8519F1997700000A96 /* BNRStockHolding.m */; };
-		67C31A6919F50DC4008365AB /* BNRForeignStockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C31A6819F50DC4008365AB /* BNRForeignStockHolding.m */; };
-		67FC78CF19F548BF0038D520 /* BNRPortfolio.m in Sources */ = {isa = PBXBuildFile; fileRef = 67FC78CE19F548BF0038D520 /* BNRPortfolio.m */; };
+		6708672919F8452700F94B86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6708672819F8452700F94B86 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		670FBC7819F1994400000A96 /* CopyFiles */ = {
+		6708672319F8452700F94B86 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -26,18 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		670FBC7A19F1994400000A96 /* Stocks */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Stocks; sourceTree = BUILT_PRODUCTS_DIR; };
-		670FBC7D19F1994400000A96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		670FBC8419F1997700000A96 /* BNRStockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNRStockHolding.h; path = ../BNRStockHolding.h; sourceTree = "<group>"; };
-		670FBC8519F1997700000A96 /* BNRStockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BNRStockHolding.m; path = ../BNRStockHolding.m; sourceTree = "<group>"; };
-		67C31A6719F50DC4008365AB /* BNRForeignStockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRForeignStockHolding.h; sourceTree = "<group>"; };
-		67C31A6819F50DC4008365AB /* BNRForeignStockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRForeignStockHolding.m; sourceTree = "<group>"; };
-		67FC78CD19F548BF0038D520 /* BNRPortfolio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRPortfolio.h; sourceTree = "<group>"; };
-		67FC78CE19F548BF0038D520 /* BNRPortfolio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRPortfolio.m; sourceTree = "<group>"; };
+		6708672519F8452700F94B86 /* Constants */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Constants; sourceTree = BUILT_PRODUCTS_DIR; };
+		6708672819F8452700F94B86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		670FBC7719F1994400000A96 /* Frameworks */ = {
+		6708672219F8452700F94B86 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,103 +38,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		670FBC7119F1994300000A96 = {
+		6708671C19F8452600F94B86 = {
 			isa = PBXGroup;
 			children = (
-				670FBC7C19F1994400000A96 /* Stocks */,
-				670FBC7B19F1994400000A96 /* Products */,
+				6708672719F8452700F94B86 /* Constants */,
+				6708672619F8452700F94B86 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		670FBC7B19F1994400000A96 /* Products */ = {
+		6708672619F8452700F94B86 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				670FBC7A19F1994400000A96 /* Stocks */,
+				6708672519F8452700F94B86 /* Constants */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		670FBC7C19F1994400000A96 /* Stocks */ = {
+		6708672719F8452700F94B86 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				670FBC8419F1997700000A96 /* BNRStockHolding.h */,
-				670FBC8519F1997700000A96 /* BNRStockHolding.m */,
-				67C31A6719F50DC4008365AB /* BNRForeignStockHolding.h */,
-				67C31A6819F50DC4008365AB /* BNRForeignStockHolding.m */,
-				67FC78CD19F548BF0038D520 /* BNRPortfolio.h */,
-				67FC78CE19F548BF0038D520 /* BNRPortfolio.m */,
-				670FBC7D19F1994400000A96 /* main.m */,
+				6708672819F8452700F94B86 /* main.m */,
 			);
-			path = Stocks;
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		670FBC7919F1994400000A96 /* Stocks */ = {
+		6708672419F8452700F94B86 /* Constants */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 670FBC8119F1994400000A96 /* Build configuration list for PBXNativeTarget "Stocks" */;
+			buildConfigurationList = 6708672C19F8452700F94B86 /* Build configuration list for PBXNativeTarget "Constants" */;
 			buildPhases = (
-				670FBC7619F1994400000A96 /* Sources */,
-				670FBC7719F1994400000A96 /* Frameworks */,
-				670FBC7819F1994400000A96 /* CopyFiles */,
+				6708672119F8452700F94B86 /* Sources */,
+				6708672219F8452700F94B86 /* Frameworks */,
+				6708672319F8452700F94B86 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Stocks;
-			productName = Stocks;
-			productReference = 670FBC7A19F1994400000A96 /* Stocks */;
+			name = Constants;
+			productName = Constants;
+			productReference = 6708672519F8452700F94B86 /* Constants */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		670FBC7219F1994300000A96 /* Project object */ = {
+		6708671D19F8452600F94B86 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Raffaele Rainone";
 				TargetAttributes = {
-					670FBC7919F1994400000A96 = {
+					6708672419F8452700F94B86 = {
 						CreatedOnToolsVersion = 6.0.1;
 					};
 				};
 			};
-			buildConfigurationList = 670FBC7519F1994300000A96 /* Build configuration list for PBXProject "Stocks" */;
+			buildConfigurationList = 6708672019F8452700F94B86 /* Build configuration list for PBXProject "Constants" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 670FBC7119F1994300000A96;
-			productRefGroup = 670FBC7B19F1994400000A96 /* Products */;
+			mainGroup = 6708671C19F8452600F94B86;
+			productRefGroup = 6708672619F8452700F94B86 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				670FBC7919F1994400000A96 /* Stocks */,
+				6708672419F8452700F94B86 /* Constants */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		670FBC7619F1994400000A96 /* Sources */ = {
+		6708672119F8452700F94B86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67C31A6919F50DC4008365AB /* BNRForeignStockHolding.m in Sources */,
-				67FC78CF19F548BF0038D520 /* BNRPortfolio.m in Sources */,
-				670FBC7E19F1994400000A96 /* main.m in Sources */,
-				670FBC8619F1997700000A96 /* BNRStockHolding.m in Sources */,
+				6708672919F8452700F94B86 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		670FBC7F19F1994400000A96 /* Debug */ = {
+		6708672A19F8452700F94B86 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -183,7 +165,7 @@
 			};
 			name = Debug;
 		};
-		670FBC8019F1994400000A96 /* Release */ = {
+		6708672B19F8452700F94B86 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -217,14 +199,14 @@
 			};
 			name = Release;
 		};
-		670FBC8219F1994400000A96 /* Debug */ = {
+		6708672D19F8452700F94B86 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		670FBC8319F1994400000A96 /* Release */ = {
+		6708672E19F8452700F94B86 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -234,25 +216,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		670FBC7519F1994300000A96 /* Build configuration list for PBXProject "Stocks" */ = {
+		6708672019F8452700F94B86 /* Build configuration list for PBXProject "Constants" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				670FBC7F19F1994400000A96 /* Debug */,
-				670FBC8019F1994400000A96 /* Release */,
+				6708672A19F8452700F94B86 /* Debug */,
+				6708672B19F8452700F94B86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		670FBC8119F1994400000A96 /* Build configuration list for PBXNativeTarget "Stocks" */ = {
+		6708672C19F8452700F94B86 /* Build configuration list for PBXNativeTarget "Constants" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				670FBC8219F1994400000A96 /* Debug */,
-				670FBC8319F1994400000A96 /* Release */,
+				6708672D19F8452700F94B86 /* Debug */,
+				6708672E19F8452700F94B86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 670FBC7219F1994300000A96 /* Project object */;
+	rootObject = 6708671D19F8452600F94B86 /* Project object */;
 }
