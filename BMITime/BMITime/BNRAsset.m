@@ -21,7 +21,7 @@
         return [NSString stringWithFormat:@"<%@: $%u, unassigned>", self.label, self.resaleValue];
     }
 }
-
+//change the deallocation method:
 - (void)dealloc
 {
     NSLog(@"Dealloco %@",self);
