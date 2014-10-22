@@ -33,7 +33,7 @@
 - (float)bodyMassIndex
 {
     /*
-    return _weightInKilos/(_heightInMeters * _heightInMeters);//here we use hte instance variables. It's always better not to do this. Hence the following lines of code.
+    return _weightInKilos/(_heightInMeters * _heightInMeters);//here we use the instance variables. It's always better not to do this. Hence the following lines of code.
     */
     float h = [self heightInMeters];
     int w = [self weightInKilos];

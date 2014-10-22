@@ -10,6 +10,8 @@
 #import "BNRStockHolding.h"
 
 @interface BNRForeignStockHolding : BNRStockHolding
+
+@property (nonatomic) NSString *currency;
 @property (nonatomic) float conversionRate;
 
 @end
