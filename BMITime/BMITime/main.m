@@ -111,7 +111,7 @@ int main(int argc, const char * argv[]) {
         //NOTICE THAT WE CAN FILTER SET AS WELL.
         //the predicate can be very complex, Apple has a 'Predicate Programming Guide' to be consulted when we have to create complex predicate:
         //https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Predicates/Predicates.pdf
-        //First we defice the Predicate:
+        //First we define the Predicate:
         NSPredicate *predicate = [NSPredicate predicateWithFormat:@"holder.valueOfAssets > 70"];
         //Now we filter it:
         NSArray *toBeReclaimed = [allAssets filteredArrayUsingPredicate:predicate];
