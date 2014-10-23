@@ -110,10 +110,15 @@ int main(int argc, const char * argv[]) {
         //NOTICE that allAssets is NSArray (i.e. NOT Mutable). So we use the method -(NSArray *)filteredArrayUsingPredicate:..; that create a new array with the elements that satisfy the predicate.
         //NOTICE THAT WE CAN FILTER SET AS WELL.
         //the predicate can be very complex, Apple has a 'Predicate Programming Guide' to be consulted when we have to create complex predicate:
+<<<<<<< HEAD
         //********************************************************************************************
         //https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Predicates/Predicates.pdf
         //********************************************************************************************
         //First we define the Predicate:
+=======
+        //https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Predicates/Predicates.pdf
+        //First we defice the Predicate:
+>>>>>>> 47cf9a6df094a48b0a93cc99ad6e98a0bd0088c7
         NSPredicate *predicate = [NSPredicate predicateWithFormat:@"holder.valueOfAssets > 70"];
         //Now we filter it:
         NSArray *toBeReclaimed = [allAssets filteredArrayUsingPredicate:predicate];

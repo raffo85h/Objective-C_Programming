@@ -10,6 +10,7 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+<<<<<<< HEAD
         NSLog(@"\u03c0 is %f.", M_PI);
         NSLog(@"%d is greater.",MAX(12, 7));
         
@@ -31,3 +32,10 @@ int main(int argc, const char * argv[]) {
     }
     return 0;
 }
+=======
+        // insert code here...
+        NSLog(@"Hello, World!");
+    }
+    return 0;
+}
+>>>>>>> 47cf9a6df094a48b0a93cc99ad6e98a0bd0088c7
