@@ -9,14 +9,27 @@
 #import <Foundation/Foundation.h>
 #import "BNRLogger.h"
 
+typedef void (^notifBlock)(NSNotification *);
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         BNRLogger *logger = [[BNRLogger alloc] init];
         
-        [[NSNotificationCenter defaultCenter] addObserver:logger
+/*        [[NSNotificationCenter defaultCenter] addObserver:logger
                                                  selector:@selector(zoneChange:)
                                                      name:NSSystemTimeZoneDidChangeNotification
                                                    object:nil];
+ 
+        notifBlock zoneChanger;
+        zoneChanger = ^(NSNotification *none){
+            NSLog(@"The time zone has changed.");
+        };*/
+        [[NSNotificationCenter defaultCenter] addObserverForName:NSSystemTimeZoneDidChangeNotification
+                                                          object:nil
+                                                           queue:nil
+                                                      usingBlock:^(NSNotification *none){
+                                                          NSLog(@"The time zone has changed.");
+                                                      }];
         
         NSURL *url = [NSURL URLWithString:@"http://www.gutenberg.org/cache/epub/205/pg205.txt"];
         
