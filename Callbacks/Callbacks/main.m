@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BNRLogger.h"
+#import "BNRObserver.h"
 
 typedef void (^notifBlock)(NSNotification *);
 
@@ -45,6 +46,13 @@ int main(int argc, const char * argv[]) {
                                                         selector:@selector(updateLastTime:)
                                                         userInfo:nil
                                                          repeats:YES];
+        
+        __unused BNRObserver *observer = [[BNRObserver alloc] init];
+        //I want to know the old and new value of lastTime anytime it changes
+        [logger addObserver:observer
+                 forKeyPath:@"lastTimeString"
+                    options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld
+                    context:nil];
         
         [[NSRunLoop currentRunLoop] run];
         
