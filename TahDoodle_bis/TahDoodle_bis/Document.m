@@ -18,7 +18,7 @@
 //The following 3 methods are required (the last is optional sometimes) by <NSTableViewDataSource>
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
 {
-    //this table-view shos the array of activities, hence the number of elements in the table = the number of elements in the array (= [self.tasks count])
+    //this table-view shows the array of activities, hence the number of elements in the table = the number of elements in the array (= [self.tasks count])
     return [self.tasks count];
 }
 
@@ -26,7 +26,7 @@
 objectValueForTableColumn:(NSTableColumn *)tableColumn
             row:(NSInteger)row
 {
-    //this returns an item in the data source in the specified table column of the view
+    //this returns an item in the data source in the specified table row of the view
     return [self.tasks objectAtIndex:row];
 }
 
@@ -111,7 +111,7 @@ objectValueForTableColumn:(NSTableColumn *)tableColumn
         self.tasks = [NSMutableArray array];
     }
     //we add a new item that display the message:
-    [self.tasks addObject:@"New Item"];
+    [self.tasks addObject:@"NewItem"];
     //now we have to tell the table-view to update and to tell DataSource (that here is an object of Document) to show the new data
     [self.taskTable reloadData];
     //now we tell the application (using updateChangeCount) that it has to mark the document us unsaved (with NSChangedone)
@@ -120,10 +120,9 @@ objectValueForTableColumn:(NSTableColumn *)tableColumn
 
 - (IBAction)removeTask:(id)sender;
 {
-    if(self.taskTable.selectedRow<0){//selectedRow return -1 if no row is selected.
+   if([self.taskTable selectedRow]<0){//selectedRow returns -1 if no row is selected.
         return;
     }
-
     [self.tasks removeObjectAtIndex:[self.taskTable selectedRow]];
 
     //THE FOLLOWING IS AS IN ADDTASK
